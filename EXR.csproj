@@ -1,0 +1,1219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{1E1E7C08-A2D3-54C7-6ED2-FC9E8AA6A0F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>EXR</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_28;UNITY_2018_4;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;PROTY_CCU;ENABLE_EDITORXR;INCLUDE_SPATIAL_TRACKING;INCLUDE_TEXT_MESH_PRO;UNITY_CCU;PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_0;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER;BAYATGAMES;BAYATGAMES_SAVEGAMEPRO;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2018.4.28f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.6f1\Editor\2018.4.28f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.6f1\Editor\2018.4.28f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\EditorXR\Action Maps\ProxyAnimatorInput.cs" />
+    <Compile Include="Assets\EditorXR\Action Maps\Standard.cs" />
+    <Compile Include="Assets\EditorXR\Action Maps\TrackedObject.cs" />
+    <Compile Include="Assets\EditorXR\Action Maps\UIActions.cs" />
+    <Compile Include="Assets\EditorXR\Actions\BaseAction.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Copy.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Cut.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Delete.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Duplicate.cs" />
+    <Compile Include="Assets\EditorXR\Actions\OpenScene.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Paste.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Play.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Redo.cs" />
+    <Compile Include="Assets\EditorXR\Actions\SaveScene.cs" />
+    <Compile Include="Assets\EditorXR\Actions\SelectParent.cs" />
+    <Compile Include="Assets\EditorXR\Actions\Undo.cs" />
+    <Compile Include="Assets\EditorXR\AssemblyInfo.cs" />
+    <Compile Include="Assets\EditorXR\Manipulators\BaseManipulator.cs" />
+    <Compile Include="Assets\EditorXR\Manipulators\DirectManipulator.cs" />
+    <Compile Include="Assets\EditorXR\Manipulators\ScaleManipulator.cs" />
+    <Compile Include="Assets\EditorXR\Manipulators\StandardManipulator.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\MainMenu.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\MainMenuInput.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\Scripts\MainMenuActionButton.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\Scripts\MainMenuButton.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\Scripts\MainMenuFace.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\Scripts\MainMenuItemAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\Scripts\MainMenuSelectable.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\Scripts\MainMenuToggle.cs" />
+    <Compile Include="Assets\EditorXR\Menus\MainMenu\Scripts\MainMenuUI.cs" />
+    <Compile Include="Assets\EditorXR\Menus\RadialMenu\RadialMenu.cs" />
+    <Compile Include="Assets\EditorXR\Menus\RadialMenu\RadialMenuInput.cs" />
+    <Compile Include="Assets\EditorXR\Menus\RadialMenu\Scripts\RadialMenuSlot.cs" />
+    <Compile Include="Assets\EditorXR\Menus\RadialMenu\Scripts\RadialMenuUI.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialMainMenu\SpatialMainMenu.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\Scripts\SpatialUIController.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\Scripts\SpatialUIView.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\Scripts\SpatialMenuBackButton.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\Scripts\SpatialMenuElement.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\Scripts\SpatialMenuItemAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\Scripts\SpatialMenuSectionTitleElement.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\Scripts\SpatialMenuSubMenuElement.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\Scripts\SpatialMenuUI.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\SpatialMenu.cs" />
+    <Compile Include="Assets\EditorXR\Menus\SpatialUI\SpatialMenu\SpatialMenuInput.cs" />
+    <Compile Include="Assets\EditorXR\Menus\ToolsMenu\Scripts\HintIcon.cs" />
+    <Compile Include="Assets\EditorXR\Menus\ToolsMenu\Scripts\HintLine.cs" />
+    <Compile Include="Assets\EditorXR\Menus\ToolsMenu\Scripts\ToolsMenuUI.cs" />
+    <Compile Include="Assets\EditorXR\Menus\ToolsMenu\ToolsMenu.cs" />
+    <Compile Include="Assets\EditorXR\Menus\ToolsMenu\ToolsMenuButton\ToolsMenuButton.cs" />
+    <Compile Include="Assets\EditorXR\Menus\ToolsMenu\ToolsMenuInput.cs" />
+    <Compile Include="Assets\EditorXR\Menus\UndoMenu\Scripts\UndoMenuUI.cs" />
+    <Compile Include="Assets\EditorXR\Menus\UndoMenu\UndoMenu.cs" />
+    <Compile Include="Assets\EditorXR\Menus\UndoMenu\UndoMenuInput.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Actions\ActionMenuItemAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Contexts\EditingContextManager.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Contexts\EditingContextManagerSettings.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Contexts\EditorXRContext.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.DirectSelection.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.Interfaces.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.Menus.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.MiniWorlds.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.Rays.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.Tools.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.ToolsMenu.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.UI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.Vacuumables.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\EditorVR.Viewer.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\ActionsModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\AdaptivePositionModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\DeviceInputModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\FeedbackModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\GazeDivergenceModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\HapticsModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\HierarchyModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\HighlightModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\IntersectionModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\LockModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\MultipleRayInputModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\PolyModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\ProjectFolderModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\SceneObjectModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\SelectionModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\SerializedPreferencesModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\SnappingModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\SpatialHashModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\SpatialHintModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\SpatialScrollModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\TooltipModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\WebModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\InterfaceConnectors\WorkspaceModuleConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IAxisConstraints.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IForEachRayOrigin.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IInspectorWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IInterfaceConnector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\ILateBindInterfaceMethods.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IMiniWorld.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\INodeToRay.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IRayToNode.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\ISerializePreferences.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\ISystemModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IUsesHierarchyData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IUsesPointer.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\Interfaces\IUsesProjectFolderData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Core\VRView.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\ActionMenuData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\AssetData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\AxisFlags.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\DefaultScriptReferences.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\DirectSelectionData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\FolderData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\HandleEventData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\HierarchyData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\InspectorData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\MenuHideFlags.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\Node.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\PropertyData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\RayEventData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\SelectionFlags.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\SpatialHash.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Data\Tuple.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Extensions\BoundsExtensions.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Extensions\MonoBehaviourExtensions.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Extensions\TransformExtensions.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Extensions\Vector2Extensions.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Extensions\Vector3Extensions.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Handles\BaseHandle.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Handles\LinearHandle.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Handles\PlaneHandle.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Handles\RadialHandle.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Handles\SphereHandle.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Handles\UI\DropDown.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Handles\UI\KeyboardButton.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\EditorMonoBehaviour.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\EditorOnlyWorkspaceAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\EditorWindowCapture.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\EditorWindowCaptureUpdater.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\FlagsPropertyAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\GradientPair.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\OptionalDependencyAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\PlayerBody.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\PlayerFloor.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\ProcessInputAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\RequiresLayerAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\RequiresTagAttribute.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\SmoothFloat.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\SmoothMotion.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Helpers\VRSmoothCamera.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Input\BaseInputToEvents.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Input\BaseVRInputToEvents.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Input\BaseVRInputToEventsSteamVR.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Input\IInputToEvents.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Input\OVRTouchInputToEvents.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Input\ViveInputToEvents.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\ICustomHighlight.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\IDroppable.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\IDropReceiver.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\IFeedbackReceiver.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\IGrabObjects.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\IManipulatorController.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\ISelectionChanged.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\ISerializeWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\ISettingsMenuProvider.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\ISpatialMenuProvider.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\ITooltipPlacement.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\ITwoHandedScaler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\IUpdateInspectors.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Capability\IVacuumable.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IAction.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IAlternateMenu.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IEditingContext.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IEditor.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\ILocomotor.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IMainMenu.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IManipulator.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IMenu.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IMenuIcon.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IMultiDeviceTool.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IPreviewCamera.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IProxy.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IScriptReference.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\ITool.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IToolsMenu.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IToolsMenuButton.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\ITooltip.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\ITransformer.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\Entity\IWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IActions.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IActionsMenu.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IAdaptPosition.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IAllWorkspaces.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IBlockUIInteraction.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ICanGrabObject.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ICheckBounds.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ICheckSphere.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IConnectInterfaces.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IContainsVRPlayerCompletely.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IControlHaptics.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IControlInputIntersection.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IControlSpatialHinting.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IControlSpatialScrolling.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ICreateWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ICustomActionMap.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IDeleteSceneObject.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IDetectGazeDivergence.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IExclusiveMode.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IFilterUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IGetDefaultRayColor.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IGetFieldGrabOrigin.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IGetManipulatorDragState.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IGetPreviewOrigin.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IGetRayVisibility.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IGetVRPlayerObjects.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IInstantiateMenuUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IInstantiateUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IIsHoveringOverUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IIsInMiniWorld.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IIsMainMenuVisible.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ILinkedObject.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IMoveCameraRig.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IPlaceSceneObject.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IPlaceSceneObjects.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IPoly.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IPreviewInToolsMenuButton.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IProcessInput.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IRaycast.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IRayVisibilitySettings.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IRequestFeedback.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IRequestStencilRef.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IResetWorkspaces.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ISelectObject.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ISelectTool.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ISetDefaultRayColor.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ISetEditingContext.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ISetHighlight.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ISetManipulatorsVisible.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ISetTooltipVisibility.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IStandardActionMap.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IStandardIgnoreList.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\ITrackedObjectActionMap.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesCameraRig.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesDeviceType.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesDirectSelection.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesGameObjectLocking.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesGrouping.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesHandedRayOrigin.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesMenuOrigins.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesNode.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesRaycastResults.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesRayOrigin.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesSnapping.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesSpatialHash.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesStencilRef.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesViewerBody.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IUsesViewerScale.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\FunctionalityInjection\IWeb.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\ISettingsMenuItemProvider.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\IUsesCustomMenuOrigins.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Interfaces\IUsesRayOrigins.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\Interfaces\IListViewItem.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\Interfaces\IListViewItemData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\Interfaces\INestedListViewItem.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\Interfaces\INestedListViewItemData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\ListViewController.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\ListViewControllerBase.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\ListViewItem.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\ListViewItemTemplate.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\ListViewScroller.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\NestedListViewController.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\NestedListViewItem.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\Core\NestedListViewItemData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\EditorXRListViewController.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\EditorXRListViewItem.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\EditorXRNestedListViewController.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\ListView\EditorXRNestedListViewItem.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\ActionsModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\AdaptivePositionModule\AdaptivePositionModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\DeviceInputModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\DragAndDropModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\FeedbackModule\FeedbackModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\GazeDivergenceModule\GazeDivergenceModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\HapticsModule\HapticPulse.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\HapticsModule\HapticsModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\HierarchyModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\HighlightModule\HighlightModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\IntersectionModule\IntersectionModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\IntersectionModule\IntersectionTester.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\KeyboardModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\LockModule\LockModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\ExecuteRayEvents.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IRayBeginDragHandler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IRayClickHandler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IRayDragHandler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IRayEndDragHandler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IRayEnterHandler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IRayExitHandler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IRayHoverHandler.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\Interfaces\IWillRender.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\MultipleRayInputModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\MultipleRayInputModule\VisibilityDetector.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\ProjectFolderModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SceneObjectModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SelectionModule\SelectionModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SerializedPreferencesModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SnappingModule\SnappingModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SnappingModule\SnappingModuleSettingsUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SpatialHashModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SpatialHintModule\SpatialHintModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SpatialHintModule\SpatialHintUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\SpatialScrollModule\SpatialScrollModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\TooltipModule\Tooltip.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\TooltipModule\TooltipModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\TooltipModule\TooltipUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\WebModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Modules\WorkspaceModule.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\AffordanceTooltip.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\AffordanceTooltipPlacement.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\Affordance.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\AffordanceAnimationDefinition.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\AffordanceDefinition.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\AffordanceVisibilityDefinition.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\ProxyAffordanceMap.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\ProxyExtras.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\ProxyFeedbackRequest.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Data\SerializedProxyFeedback.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\DefaultProxyRay.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\ProxyAnimator.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\ProxyNode.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\ShakeVelocityTracker.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Touch\TouchProxy.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\TwoHandedProxyBase.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\Vive\ViveProxy.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Proxies\ViveProxyHelper.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Runtime\EditorApplication.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Runtime\EditorPrefs.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Runtime\PivotMode.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Runtime\Selection.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Runtime\SerializedObject.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Runtime\SerializedPropertyType.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\Button.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\ClipText.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\CuboidLayout.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\DefaultToggleGroup.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\GradientButton.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\GridCellSizeAdjuster.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\InputField.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\Interfaces\ISelectionFlags.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\KeyboardMallet.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\KeyboardUI.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\NumericInputField.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\RaySlider.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\StandardInputField.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\SubmenuFace.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\TooltipData.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\UI\UITransformCopy.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\AssetDropUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\CameraUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\ComponentUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\InputUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\IntersectionUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\MaterialUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\MathUtilsExt.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\ObjectUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\TagManager.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\TransformCopy.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\TransitionUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\UIUtils.cs" />
+    <Compile Include="Assets\EditorXR\Scripts\Utilities\UnityBrandColorScheme.cs" />
+    <Compile Include="Assets\EditorXR\Tools\_HierarchyVisualizerTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\_ProjectVisualizerTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\_VRBrushTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\AnnotationTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\Input\AnnotationInput.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\UserInterface\AnnotationContextMenu.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\UserInterface\AnnotationPointer.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\UserInterface\BrushSizeUI.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\UserInterface\ColorPickerActivator.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\UserInterface\ColorPickerSquareUI.cs" />
+    <Compile Include="Assets\EditorXR\Tools\AnnotationTool\UserInterface\ColorPickerUI.cs" />
+    <Compile Include="Assets\EditorXR\Tools\CreatePrimitiveTool\CreatePrimitiveMenu.cs" />
+    <Compile Include="Assets\EditorXR\Tools\CreatePrimitiveTool\CreatePrimitiveMenuButtonUI.cs" />
+    <Compile Include="Assets\EditorXR\Tools\CreatePrimitiveTool\CreatePrimitiveTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\ExclusiveModeTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\LocomotionTool\LocomotionInput.cs" />
+    <Compile Include="Assets\EditorXR\Tools\LocomotionTool\LocomotionTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\LocomotionTool\Scripts\BlinkVisuals.cs" />
+    <Compile Include="Assets\EditorXR\Tools\LocomotionTool\Scripts\Ring.cs" />
+    <Compile Include="Assets\EditorXR\Tools\LocomotionTool\Scripts\ViewerScaleVisuals.cs" />
+    <Compile Include="Assets\EditorXR\Tools\MoveWorkspacesTool\MoveWorkspacesTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\MultiTool\MultiToolTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\SelectionTool\SelectionInput.cs" />
+    <Compile Include="Assets\EditorXR\Tools\SelectionTool\SelectionTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\TransformTool\TransformInput.cs" />
+    <Compile Include="Assets\EditorXR\Tools\TransformTool\TransformTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\UltimateRadialMenuTool.cs" />
+    <Compile Include="Assets\EditorXR\Tools\VacuumTool\VacuumInput.cs" />
+    <Compile Include="Assets\EditorXR\Tools\VacuumTool\VacuumTool.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Base\ActionMaps\WorkspaceInput.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Base\Workspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Base\WorkspaceUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\DraggableListItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\EditorWindowWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\FilterButtonUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\FilterUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\NestedDraggableListItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\WorkspaceButton.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\WorkspaceHighlight.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\Common\Scripts\ZoomSliderUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ConsoleWorkspace\ConsoleWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\HierarchyWorkspace\HierarchyWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\HierarchyWorkspace\Scripts\HierarchyListItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\HierarchyWorkspace\Scripts\HierarchyListViewController.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\HierarchyWorkspace\Scripts\HierarchyUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\InspectorWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\InspectorListViewController.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\InspectorUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorArrayHeaderItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorBoolItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorBoundsItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorColorItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorComponentItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorDropDownItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorHeaderItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorListItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorNumberItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorObjectFieldItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorPropertyItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorRectItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorStringItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorUnimplementedItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\ListItems\InspectorVectorItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\InspectorWorkspace\Scripts\LockUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\LockedObjectsWorkspace\LockedObjectsWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\MiniWorldWorkspace\MiniWorldWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\MiniWorldWorkspace\Scripts\MiniWorld.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\MiniWorldWorkspace\Scripts\MiniWorldRenderer.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\MiniWorldWorkspace\Scripts\MiniWorldUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\MiniWorldWorkspace\Scripts\ResetUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\PolyWorkspace\PolyWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\PolyWorkspace\Scripts\PolyGridAsset.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\PolyWorkspace\Scripts\PolyGridItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\PolyWorkspace\Scripts\PolyGridViewController.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\PolyWorkspace\Scripts\PolyModule.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\PolyWorkspace\Scripts\PolyUI.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ProfilerWorkspace\ProfilerWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ProjectWorkspace\ProjectWorkspace.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ProjectWorkspace\Scripts\AssetGridItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ProjectWorkspace\Scripts\AssetGridViewController.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ProjectWorkspace\Scripts\FolderListItem.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ProjectWorkspace\Scripts\FolderListViewController.cs" />
+    <Compile Include="Assets\EditorXR\Workspaces\ProjectWorkspace\Scripts\ProjectUI.cs" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\WorkspaceRenderTextureOverlay.shader" />
+    <None Include="Assets\EditorXR\Workspaces\ProjectWorkspace\Shaders\StandardDecal.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\ListClip.cginc" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\ListItemTransparent.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\GradientButtonMaskClip.shader" />
+    <None Include="Assets\EditorXR\Tools\AnnotationTool\Materials\AnnotationLine.shader" />
+    <None Include="Assets\EditorXR\Shaders\ProxyBackground.shader" />
+    <None Include="Assets\EditorXR\Menus\RadialMenu\Shaders\RadialMenuBorderGradient.shader" />
+    <None Include="Assets\EditorXR\Shaders\VerticalGradient.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\TextMeshProClip\TMP_SDF_Clip.shader" />
+    <None Include="Assets\EditorXR\Menus\MainMenu\Shaders\AngledVerticalGradientUIClip.shader" />
+    <None Include="Assets\EditorXR\Scripts\Modules\SnappingModule\Shaders\GroundPlane.shader" />
+    <None Include="Assets\EditorXR\Scripts\Modules\TooltipModule\Tooltips\Shaders\BlurDynamicOpaque.shader" />
+    <None Include="Assets\EditorXR\Shaders\MeshChain.cginc" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\GradientButtonClip.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Base\Shaders\WorkspaceBackgroundMask.shader" />
+    <None Include="Assets\EditorXR\Shaders\Cone.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\GradientButton.shader" />
+    <None Include="Assets\EditorXR\Menus\RadialMenu\Shaders\RadialFacesRevealMask.shader" />
+    <None Include="Assets\EditorXR\Menus\RadialMenu\Shaders\RadialMenuSlots.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\ListClipStandard.shader" />
+    <None Include="Assets\EditorXR\Scripts\Modules\SnappingModule\Shaders\HorizontalBorderGradient.shader" />
+    <None Include="Assets\EditorXR\Shaders\CustomClipPlanes.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\GradientButtonMask.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\WorkspaceText.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\ListClip.shader" />
+    <None Include="Assets\EditorXR\Prefabs\Proxies\ProxyBody.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\GradientTexture.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\TextMeshProClip\TMPro.cginc" />
+    <None Include="Assets\EditorXR\Shaders\StandardFogDisabled.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Base\Shaders\WorkspaceBackgroundVerticalFade.shader" />
+    <None Include="Assets\EditorXR\Scripts\Modules\TooltipModule\Tooltips\Shaders\BlurDynamic.shader" />
+    <None Include="Assets\EditorXR\Menus\RadialMenu\Shaders\RadialFrame.shader" />
+    <None Include="Assets\EditorXR\Tools\LocomotionTool\Shaders\Ring.shader" />
+    <None Include="Assets\EditorXR\Shaders\Silhouette.cginc" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\WorkspaceTextClip.shader" />
+    <None Include="Assets\EditorXR\Shaders\StandardOverlay.shader" />
+    <None Include="Assets\EditorXR\Workspaces\MiniWorldWorkspace\Shaders\Grid.shader" />
+    <None Include="Assets\EditorXR\Fonts\Roboto\Apache License.txt" />
+    <None Include="Assets\EditorXR\Menus\MainMenu\Shaders\VerticalBorderGradient.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\ListItem.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Base\Shaders\UINoBackface.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\ListClipTransparent.shader" />
+    <None Include="Assets\EditorXR\Shaders\Silhouette.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\ListClipText.shader" />
+    <None Include="Assets\EditorXR\Menus\MainMenu\Shaders\TransparentBlurVerticalFade.shader" />
+    <None Include="Assets\EditorXR\Scripts\UI\Shaders\KeyboardButton.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Base\Shaders\WorkspaceBackgroundBorderGradient.shader" />
+    <None Include="Assets\EditorXR\Menus\SpatialUI\Shaders\SpatialUIBackgroundOverlayBlur.shader" />
+    <None Include="Assets\EditorXR\Workspaces\Common\Shaders\TextMeshProClip\TMPro_Properties.cginc" />
+    <None Include="Assets\EditorXR\Menus\RadialMenu\Shaders\RadialMenuSlotsMask.shader" />
+    <None Include="Assets\EditorXR\Menus\SpatialUI\Shaders\SpatialUIBackground.shader" />
+    <None Include="Assets\EditorXR\Tools\AnnotationTool\Materials\AnnotationBrushCone.shader" />
+    <None Include="Assets\EditorXR\Shaders\EVRMeshChain.shader" />
+    <None Include="Assets\EditorXR\Tools\LocomotionTool\Shaders\UI-Default-NoDepth.shader" />
+    <None Include="Assets\EditorXR\Menus\RadialMenu\Shaders\RadialMenuIcons.shader" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpression">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpressionEditor">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/PlayMaker/Editor/ConditionalExpressionEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMakerEditor">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMakerEditorResources">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMaker">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/_Jimmy_Gao/Plugins/LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/_Jimmy_Gao/Plugins/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Assets/_Jimmy_Gao/Plugins/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/souhe/OneDrive/Documents/Martin v28- PrtclsBigBoxes(Last)(pending assets integration)/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/2018.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="EXR-Dependencies.csproj">
+      <Project>{18DE03B8-B59D-B198-40A3-0CB89F088336}</Project>
+      <Name>EXR-Dependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="input-prototype.csproj">
+      <Project>{281BDA61-7853-2351-597D-8CB7F3E4F7BC}</Project>
+      <Name>input-prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="VRLR.csproj">
+      <Project>{6D21D525-1BF4-4BF8-9E01-48F67417DFB3}</Project>
+      <Name>VRLR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

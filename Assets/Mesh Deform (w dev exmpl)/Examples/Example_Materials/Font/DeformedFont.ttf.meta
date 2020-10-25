@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a614bbdf88094344d9bd84c4e782b1f1
+timeCreated: 1511123263
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Deformed Font
+  fontNames:
+  - Deformed Font
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

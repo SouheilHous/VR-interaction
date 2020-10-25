@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d7b7c5fd745004aa83c8c918d01cd3, type: 3}
+  m_Name: BrushStyle15
+  m_EditorClassIdentifier: 
+  Material: {fileID: 2100000, guid: e45e0c5128cf17447ba1ba05388e22dc, type: 2}
+  StartWidth: 0.005
+  EndWidth: 0.005
+  StartColor: {r: 0.72794116, g: 0.88742393, b: 1, a: 1}
+  EndColor: {r: 1, g: 0.63235295, b: 0.85294133, a: 1}
+  OverrideMaterialColor: 0
+  TextureMode: 0

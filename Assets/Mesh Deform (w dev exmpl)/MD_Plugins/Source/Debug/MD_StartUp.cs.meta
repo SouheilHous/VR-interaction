@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d2bd6469b17a284469a9c843ffb82a17
+timeCreated: 1511286839
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Logo: {fileID: 2800000, guid: cbd098ff6eee9bf4e8acc4146c8b33b5, type: 3}
+  - Home: {fileID: 2800000, guid: d660d9ddd134e0a42a42d44da266487f, type: 3}
+  - Web: {fileID: 2800000, guid: 69deb36cdba50e64596e70ae965c8ba9, type: 3}
+  - Doc: {fileID: 2800000, guid: bbd97b8c06cabe54cae6f0dd5cdd2af3, type: 3}
+  - f: {fileID: 12800000, guid: 0576f9ad4c002504a9cecf45b5faefcb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
