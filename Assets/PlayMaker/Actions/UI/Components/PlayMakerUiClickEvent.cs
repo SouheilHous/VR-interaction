@@ -8,7 +8,7 @@ namespace HutongGames.PlayMaker
     [AddComponentMenu("PlayMaker/UI/UI Click Event")]
     public class PlayMakerUiClickEvent : PlayMakerUiEventBase
     {
-        public Button button;
+        public UnityEngine.UI.Button button;
 
         protected override void Initialize()
         {
@@ -17,7 +17,7 @@ namespace HutongGames.PlayMaker
 
             if (button == null)
             {
-                button = GetComponent<Button>();
+                button = GetComponent<UnityEngine.UI.Button>();
             }
 
             if (button != null)

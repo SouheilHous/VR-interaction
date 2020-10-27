@@ -6,7 +6,7 @@ using Valve.VR;
 using System;
 using JimmyGao;
 using System.Linq;
-using BayatGames.SaveGamePro.Extensions;
+//using BayatGames.SaveGamePro.Extensions;
 //using NUnit.Framework;
 
 public class EditorXRVRBrushManager : MonoBehaviour

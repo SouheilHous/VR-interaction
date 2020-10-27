@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using Valve.VR;
 
 namespace JimmyGao
 {
@@ -31,7 +30,7 @@ namespace JimmyGao
 		{
 
 			//get direction of the controller
-			myRay = new Ray(this.transform.position + transform.forward * 0.08f, this.transform.forward);
+			myRay = new Ray(this.transform.position, this.transform.forward);
             VRExInputModule.CustomControllerRay = myRay;
 
 
@@ -46,39 +45,16 @@ namespace JimmyGao
 
                     
 					length = Vector3.Distance (hit.point, this.transform.position);
-                    //if(hit.collider.gameObject)
+					//if(hit.collider.gameObject)
 
-                    //print (hit.transform.gameObject);
-                    //if (hit.collider.GetComponent<Button>()!=null)
-                    //{
-                    //	print("gogogo");
-                    //}
-                    //If we hit a canvas, we only want transforms with graphics to block the pointer. (that are drawn by canvas => depth not -1)
-
-                    //Martin code
-                    /*if (hit.collider.GetComponent<Button>() != null && SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI").GetStateDown(BrushManager.Instance.BrushHand.handType)
-                        && EditorXRVRBrushManager.instance.IsActive() )
-                    {
-                        hit.collider.GetComponent<Button>().onClick.Invoke();
-                    }*/
-                    if (hit.collider.gameObject.CompareTag("EDITORXR ProjectVisualizerPrefab") && SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI").GetStateDown(SteamVR_Input_Sources.Any)
-                        && EditorXRProjectMenu.instance.IsActive() && !EditorXRProjectMenu.instance.IsDragging())
-                    {
-                        EditorXRProjectMenu.instance.StartDragPrefab(hit.collider.gameObject, hit.collider.gameObject.GetComponentInParent<ProjectMenuItem>());
-                    }
-                    //-----
-
-                    if (hit.collider.GetComponent<VRBrushLineSelectable>() != null && SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI").GetStateDown(SteamVR_Input_Sources.Any))
-                    {
-                        hit.collider.GetComponent<VRBrushLineSelectable>().OnClick();
-                    }
-
-                    if (hit.collider.GetComponent<VRBrushParticleSelectable>() != null && SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI").GetStateDown(SteamVR_Input_Sources.Any))
-                    {
-                        hit.collider.GetComponent<VRBrushParticleSelectable>().OnClick();
-                    }
-
-                    if (hit.transform.GetComponent<GraphicRaycaster> () != null) {
+					//print (hit.transform.gameObject);
+					//if (hit.collider.GetComponent<Button>()!=null)
+					//{
+					//	print("gogogo");
+					//}
+					//If we hit a canvas, we only want transforms with graphics to block the pointer. (that are drawn by canvas => depth not -1)
+                    
+					if (hit.transform.GetComponent<GraphicRaycaster> () != null) {
                         PointAt = true;
                         LaserBeamTransform.gameObject.SetActive(true);
                         LaserBeamDot.gameObject.SetActive(true);

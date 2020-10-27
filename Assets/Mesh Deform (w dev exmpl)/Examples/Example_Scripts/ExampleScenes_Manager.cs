@@ -79,7 +79,7 @@ public class ExampleScenes_Manager : MonoBehaviour {
     private void _BasicShapesSceneUpdater()
     {
         if(_EnablePhysics)
-        if (_EnablePhysics.isOn)
+        if (_EnablePhysics.isActiveAndEnabled)
         {
             foreach (GameObject gm in GameObject.FindObjectsOfType(typeof(GameObject)))
             {
@@ -93,7 +93,7 @@ public class ExampleScenes_Manager : MonoBehaviour {
                     if (gm.GetComponent<MD_MeshProEditor>().ppVerticesRoot != null)
                         gm.GetComponent<MD_MeshProEditor>().MeshEditor_ClearVerticeEditor();
                 }
-                if (_EnableAutoMove.isOn && gm.GetComponent<Rigidbody>() )
+                if (_EnableAutoMove.isActiveAndEnabled && gm.GetComponent<Rigidbody>() )
                 {
                     gm.GetComponent<Rigidbody>().AddTorque(Vector3.right * 200);
                 }

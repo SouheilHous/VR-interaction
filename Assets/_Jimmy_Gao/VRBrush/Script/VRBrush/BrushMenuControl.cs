@@ -35,8 +35,6 @@ namespace JimmyGao
 
         private int number;
         private string photoPath;
-
-        private bool bUpdatedThisFrame;
         
         private void Start()
         {
@@ -77,19 +75,13 @@ namespace JimmyGao
         {
             DisplayTimeStamp();
         }
-
-        private void LateUpdate()
-        {
-            bUpdatedThisFrame = false;
-        }
         #region 设置直线模式
         /// <summary>
         /// 设置直线模式
         /// </summary>
         public void SetStraightLineMode()
         {
-            //var currButton=UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
-            var currButton = StraightButton;
+			var currButton=UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
 
             if (BrushManager.Instance.BrushMode == 1)
             {
@@ -110,16 +102,7 @@ namespace JimmyGao
         /// </summary>
         public void SetEraseMode()
         {
-            if (bUpdatedThisFrame) return;
-            bUpdatedThisFrame = true;
-
-            //var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
-            var currButton = EraseModeButton;
-            ToggleButtonControl toggleButtonControl = null;
-
-            if (currButton != null)
-                toggleButtonControl = currButton.GetComponent<ToggleButtonControl>();
-
+            var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
 
             if (MenuControl.Instance.isShow == true)
             {
@@ -127,8 +110,7 @@ namespace JimmyGao
                 {
                     BrushManager.Instance.BrushMode = 0;
                     BrushManager.Instance.CurrentState = 1;
-                    if (toggleButtonControl != null)
-                        toggleButtonControl.DoCheck(false);
+                    currButton.GetComponent<ToggleButtonControl>().DoCheck(false);
                     BrushManager.Instance.isErase = false;
                 }
                 else
@@ -136,8 +118,7 @@ namespace JimmyGao
                     UncheckAll();
                     BrushManager.Instance.BrushMode = 2;
                     BrushManager.Instance.CurrentState = 0;
-                    if (toggleButtonControl != null)
-                        toggleButtonControl.DoCheck(true);
+                    currButton.GetComponent<ToggleButtonControl>().DoCheck(true);
                     BrushManager.Instance.isErase = true;
                     print("擦除模式");
                 }
@@ -148,8 +129,7 @@ namespace JimmyGao
                 {
                     BrushManager.Instance.BrushMode = 0;
                     BrushManager.Instance.CurrentState = 1;
-                    if (toggleButtonControl != null)
-                        toggleButtonControl.DoCheck(false);
+                    currButton.GetComponent<ToggleButtonControl>().DoCheck(false);
                     BrushManager.Instance.isErase = false;
                 }
                 else
@@ -157,8 +137,7 @@ namespace JimmyGao
                     UncheckAll();
                     BrushManager.Instance.BrushMode = 2;
                     BrushManager.Instance.CurrentState = 0;
-                    if (toggleButtonControl != null)
-                        toggleButtonControl.DoCheck(true);
+                    currButton.GetComponent<ToggleButtonControl>().DoCheck(true);
                     BrushManager.Instance.isErase = true;
                     print("擦除模式");
                 }
@@ -171,10 +150,7 @@ namespace JimmyGao
         /// </summary>
         public void SetSelectMode()
         {
-            if (bUpdatedThisFrame) return;
-            bUpdatedThisFrame = true;
-            //var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
-            var currButton = SelectButton;
+            var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
 
             if (BrushManager.Instance.BrushMode == 3)
             {
@@ -182,11 +158,11 @@ namespace JimmyGao
                 BrushManager.Instance.CurrentState = 1;
                 BrushManager.Instance.ContextMenu.SetActive(false);
                 
-                /*foreach (var item in TriggerSelect.Instance.HighlightList)
+                foreach (var item in TriggerSelect.Instance.HighlightList)
                 {
                     Destroy(item);
                 }
-                TriggerSelect.Instance.HighlightList.Clear();*/
+                TriggerSelect.Instance.HighlightList.Clear();
 
                 currButton.GetComponent<ToggleButtonControl>().DoCheck(false);
             }
@@ -203,10 +179,7 @@ namespace JimmyGao
         #region 设置复制模式
         public void SetDuplicateMode()
         {
-            if (bUpdatedThisFrame) return;
-            bUpdatedThisFrame = true;
-            //var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
-            var currButton = DuplicateButton;
+            var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
 
             if (MenuControl.Instance.isShow == true)
             {
@@ -220,7 +193,7 @@ namespace JimmyGao
                     UncheckAll();
                     BrushManager.Instance.BrushMode = 4;
                     currButton.GetComponent<ToggleButtonControl>().DoCheck(true);
-                    print("Enabled duplicate");
+                    print("复制模式");
                 }
             }
             else
@@ -235,7 +208,7 @@ namespace JimmyGao
                     UncheckAll();
                     BrushManager.Instance.BrushMode = 4;
                     currButton.GetComponent<ToggleButtonControl>().DoCheck(true);
-                    print("Enabled duplicate");
+                    print("复制模式");
                 }
             }
         }
@@ -246,8 +219,6 @@ namespace JimmyGao
         /// </summary>
         public void SetParticleSystemMode()
         {
-            if (bUpdatedThisFrame) return;
-            bUpdatedThisFrame = true;
             var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
 
             if (BrushManager.Instance.BrushMode == 0)

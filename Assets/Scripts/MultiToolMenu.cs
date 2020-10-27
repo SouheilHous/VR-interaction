@@ -100,19 +100,19 @@ public class MultiToolMenu : MonoBehaviour
         bool bIsEnabled = false;
 
         //Enabled Toggle
-        foreach (Toggle t in toggleGroupEnabled.ActiveToggles())
+        foreach (UnityEngine.UI.Toggle t in toggleGroupEnabled.ActiveToggles())
         {
             bIsEnabled = (t.name == "Yes");
         }
 
         //Unit
-        foreach (Toggle t in toggleGroupUnit.ActiveToggles())
+        foreach (UnityEngine.UI.Toggle t in toggleGroupUnit.ActiveToggles())
         {
             multiTool.MEASURE = (MultiTool3D.MultiTool3D.MEASUREMENT)(t.transform.GetSiblingIndex());
         }
 
         //Tool
-        foreach (Toggle t in toggleGroupTool.ActiveToggles())
+        foreach (UnityEngine.UI.Toggle t in toggleGroupTool.ActiveToggles())
         {
             switch (t.name)
             {
@@ -154,7 +154,7 @@ public class MultiToolMenu : MonoBehaviour
                     goToolAngle.SetActive(false);
                     goToolVolume.SetActive(true);
 
-                    if (toggleModeBox.isOn)
+                    if (toggleModeBox.isActiveAndEnabled)
                     {
                         multiTool.VMODE = MultiTool3D.MultiTool3D.VOLUME_MODE.Box;
 
@@ -169,7 +169,7 @@ public class MultiToolMenu : MonoBehaviour
                         tmpVolumeBoxSize[1].text = FormatFloat(multiTool.volume.bounds.size.y);
                         tmpVolumeBoxSize[2].text = FormatFloat(multiTool.volume.bounds.size.z);
                     }
-                    else if (toggleModeSphere.isOn)
+                    else if (toggleModeSphere.isActiveAndEnabled)
                     {
                         multiTool.VMODE = MultiTool3D.MultiTool3D.VOLUME_MODE.Sphere;
 
@@ -208,7 +208,7 @@ public class MultiToolMenu : MonoBehaviour
             if (!goKeyboard.activeSelf && selectedIndex >= 0)
             {
                 SubmitTypedValue();
-                valueToggles[selectedIndex].isOn = false;
+                valueToggles[selectedIndex].enabled = false;
                 selectedIndex = -1;
             }
         }
@@ -238,11 +238,11 @@ public class MultiToolMenu : MonoBehaviour
         }
 
         toggleGroupEnabled.SetAllTogglesOff();
-        toggleEnabledYes.isOn = bIsEnabled;
-        toggleEnabledNo.isOn = !bIsEnabled;
-        toggleModeBox.isOn = volumeMode == MultiTool3D.MultiTool3D.VOLUME_MODE.Box;
-        toggleModeSphere.isOn = volumeMode == MultiTool3D.MultiTool3D.VOLUME_MODE.Sphere;
-        toggleModePlane.isOn = volumeMode == MultiTool3D.MultiTool3D.VOLUME_MODE.Plane;
+        toggleEnabledYes.enabled = bIsEnabled;
+        toggleEnabledNo.enabled = !bIsEnabled;
+        toggleModeBox.enabled = volumeMode == MultiTool3D.MultiTool3D.VOLUME_MODE.Box;
+        toggleModeSphere.enabled = volumeMode == MultiTool3D.MultiTool3D.VOLUME_MODE.Sphere;
+        toggleModePlane.enabled = volumeMode == MultiTool3D.MultiTool3D.VOLUME_MODE.Plane;
     }
 
     private string FormatFloat(float f)
@@ -257,13 +257,13 @@ public class MultiToolMenu : MonoBehaviour
 
         if (selectedIndex == index) return;
 
-        if (!valueToggles[index].isOn)
+        if (!valueToggles[index].isActiveAndEnabled)
             return;
 
         if (selectedIndex != index && selectedIndex >= 0)
         {
             SubmitTypedValue();
-            valueToggles[selectedIndex].isOn = false;
+            valueToggles[selectedIndex].enabled = false;
         }
 
         selectedIndex = index;

@@ -82,7 +82,7 @@ public class MenuControl : MonoBehaviour
     private void Update()
     {
         #region 左手柄摇杆左右控制笔刷或线条Size的增大或缩小
-        if (BrushManager.Instance.ScaleUp.GetStateDown(Valve.VR.SteamVR_Input_Sources.RightHand))
+        if (BrushManager.Instance.ScaleUp.GetStateDown(BrushManager.Instance.SwitcherHand.handType))
         {
             print("按下PlusSizeButton");
             if (BrushManager.Instance.BrushMode == 3)
@@ -95,7 +95,7 @@ public class MenuControl : MonoBehaviour
             }
         }
 
-        if (BrushManager.Instance.ScaleDown.GetStateDown(Valve.VR.SteamVR_Input_Sources.RightHand))
+        if (BrushManager.Instance.ScaleDown.GetStateDown(BrushManager.Instance.SwitcherHand.handType))
         {
             print("按下MinusSizeButton");
             if (BrushManager.Instance.BrushMode == 3)
@@ -110,13 +110,13 @@ public class MenuControl : MonoBehaviour
         #endregion
         
         #region 右手柄摇杆左右做撤销或重做操作
-        //if (isUndoRedo == true)
+        if (isUndoRedo == true)
         {
-            if (BrushManager.Instance.UndoButton.GetStateDown(Valve.VR.SteamVR_Input_Sources.LeftHand))
+            if (BrushManager.Instance.UndoButton.GetStateDown(BrushManager.Instance.BrushHand.handType))
             {
                 BtnUndoOperation();
             }
-            else if (BrushManager.Instance.RedoButton.GetStateDown(Valve.VR.SteamVR_Input_Sources.LeftHand))
+            else if (BrushManager.Instance.RedoButton.GetStateDown(BrushManager.Instance.BrushHand.handType))
             {
                 BtnRedoOperation();
             }
@@ -271,20 +271,18 @@ public class MenuControl : MonoBehaviour
     /// </summary>
     public void BtnUndoOrRedoClicked ()
 	{
-        //var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
+        var currButton = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
         if (isUndoRedo == false)
         {
             isUndoRedo = true;
             print("撤销操作");
-            //currButton.GetComponent<ToggleButtonControl>().DoCheck(true);
-            btnundo_redo.GetComponent<ToggleButtonControl>().DoCheck(true);
+            currButton.GetComponent<ToggleButtonControl>().DoCheck(true);
         }
         else if(isUndoRedo == true)
         {
             isUndoRedo = false;
             print("重做操作");
-            //currButton.GetComponent<ToggleButtonControl>().DoCheck(false);
-            btnundo_redo.GetComponent<ToggleButtonControl>().DoCheck(false);
+            currButton.GetComponent<ToggleButtonControl>().DoCheck(false);
         }
 	}
     #endregion
@@ -379,6 +377,7 @@ public class MenuControl : MonoBehaviour
     /// </summary>
     public void BtnPlusBrushSize()
     {
+        RefreshControl(BrushManager.Instance.BrushMenu);
         size++;
         if (size > 6)
         {
@@ -389,7 +388,6 @@ public class MenuControl : MonoBehaviour
             BrushManager.Instance.PlusBrushSize(size);
         }
         sizetext.text = size.ToString();
-        RefreshControl(BrushManager.Instance.BrushMenu);
     }
     #endregion
     #region 减小画笔
@@ -398,6 +396,7 @@ public class MenuControl : MonoBehaviour
     /// </summary>
     public void BtnMinusBrushSize()
     {
+        RefreshControl(BrushManager.Instance.BrushMenu);
         size--;
         if (size < 1)
         {
@@ -405,7 +404,6 @@ public class MenuControl : MonoBehaviour
         }
         sizetext.text = size.ToString();
         BrushManager.Instance.MinusBrushSize(size);
-        RefreshControl(BrushManager.Instance.BrushMenu);
     }
     #endregion
     #region 增大被选中的线条

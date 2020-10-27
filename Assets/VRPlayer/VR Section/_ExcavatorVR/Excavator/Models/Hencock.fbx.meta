@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: b70cfd0a9c6044f42aa33da7ddef4448
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arrow_0
+    100002: Arrow_1
+    100004: Arrow_2
+    100006: Arrow_3
+    100008: Arrow_4
+    100010: Baffle
+    100012: DF_1
+    100014: DF_2
+    100016: DS_1
+    100018: DS_2
+    100020: DS_3
+    100022: DS_4
+    100024: DS_5
+    100026: Forks
+    100028: Front Arrow
+    100030: Front Bucket
+    100032: Front Bucket B
+    100034: Front Left Lapa
+    100036: Front lift
+    100038: Front Right Paw
+    100040: HENCOCK
+    100042: //RootNode
+    100044: Left Window
+    100046: Left wing
+    100048: Object001
+    100050: Object002
+    100052: Pis_1A
+    100054: Pis_1B
+    100056: Pis_1C
+    100058: Pis_1C003
+    100060: Pis_1D
+    100062: Pis_1F
+    100064: Pis_1G
+    100066: Pis_1J
+    100068: Pis_1T
+    100070: Pis_2A
+    100072: Pis_2B
+    100074: Pis_2C
+    100076: Pis_2C003
+    100078: Pis_2D
+    100080: Pis_2F
+    100082: Pis_2G
+    100084: Pis_2J
+    100086: Pis_2T
+    100088: Rear  Right Paw
+    100090: Rear Bucket
+    100092: Rear Bucket wide
+    100094: Rear Left Paw
+    100096: Right Door
+    100098: Right Window
+    100100: Right wing
+    100102: seat
+    100104: Steering wheel
+    100106: The Left Door
+    100108: Ticks
+    100110: Ticks_B
+    100112: Wheel_BL
+    100114: Wheel_BR
+    100116: Wheel_FL
+    100118: Wheel_FR
+    100120: Accelerator
+    100122: Brake
+    100124: Gear
+    100126: Rear_Bucket_Horizontal_Gear
+    100128: Rear_Bucket_Vertical_Gear
+    100130: Rear_Left_Lift_Lever
+    100132: Rear_Right_Lift_Lever
+    100134: Steering
+    400000: Arrow_0
+    400002: Arrow_1
+    400004: Arrow_2
+    400006: Arrow_3
+    400008: Arrow_4
+    400010: Baffle
+    400012: DF_1
+    400014: DF_2
+    400016: DS_1
+    400018: DS_2
+    400020: DS_3
+    400022: DS_4
+    400024: DS_5
+    400026: Forks
+    400028: Front Arrow
+    400030: Front Bucket
+    400032: Front Bucket B
+    400034: Front Left Lapa
+    400036: Front lift
+    400038: Front Right Paw
+    400040: //RootNode
+    400042: HENCOCK
+    400044: Left Window
+    400046: Left wing
+    400048: Object001
+    400050: Object002
+    400052: Pis_1A
+    400054: Pis_1B
+    400056: Pis_1C
+    400058: Pis_1C003
+    400060: Pis_1D
+    400062: Pis_1F
+    400064: Pis_1G
+    400066: Pis_1J
+    400068: Pis_1T
+    400070: Pis_2A
+    400072: Pis_2B
+    400074: Pis_2C
+    400076: Pis_2C003
+    400078: Pis_2D
+    400080: Pis_2F
+    400082: Pis_2G
+    400084: Pis_2J
+    400086: Pis_2T
+    400088: Rear  Right Paw
+    400090: Rear Bucket
+    400092: Rear Bucket wide
+    400094: Rear Left Paw
+    400096: Right Door
+    400098: Right Window
+    400100: Right wing
+    400102: seat
+    400104: Steering wheel
+    400106: The Left Door
+    400108: Ticks
+    400110: Ticks_B
+    400112: Wheel_BL
+    400114: Wheel_BR
+    400116: Wheel_FL
+    400118: Wheel_FR
+    400120: Accelerator
+    400122: Brake
+    400124: Gear
+    400126: Rear_Bucket_Horizontal_Gear
+    400128: Rear_Bucket_Vertical_Gear
+    400130: Rear_Left_Lift_Lever
+    400132: Rear_Right_Lift_Lever
+    400134: Steering
+    2300000: Arrow_0
+    2300002: Arrow_1
+    2300004: Arrow_2
+    2300006: Arrow_3
+    2300008: Arrow_4
+    2300010: Baffle
+    2300012: DF_1
+    2300014: DF_2
+    2300016: DS_1
+    2300018: DS_2
+    2300020: DS_3
+    2300022: DS_4
+    2300024: DS_5
+    2300026: Forks
+    2300028: Front Arrow
+    2300030: Front Bucket
+    2300032: Front Bucket B
+    2300034: Front Left Lapa
+    2300036: Front lift
+    2300038: Front Right Paw
+    2300040: HENCOCK
+    2300042: Left Window
+    2300044: Left wing
+    2300046: Object001
+    2300048: Object002
+    2300050: Pis_1A
+    2300052: Pis_1B
+    2300054: Pis_1C
+    2300056: Pis_1C003
+    2300058: Pis_1D
+    2300060: Pis_1F
+    2300062: Pis_1G
+    2300064: Pis_1J
+    2300066: Pis_1T
+    2300068: Pis_2A
+    2300070: Pis_2B
+    2300072: Pis_2C
+    2300074: Pis_2C003
+    2300076: Pis_2D
+    2300078: Pis_2F
+    2300080: Pis_2G
+    2300082: Pis_2J
+    2300084: Pis_2T
+    2300086: Rear  Right Paw
+    2300088: Rear Bucket
+    2300090: Rear Bucket wide
+    2300092: Rear Left Paw
+    2300094: Right Door
+    2300096: Right Window
+    2300098: Right wing
+    2300100: seat
+    2300102: Steering wheel
+    2300104: The Left Door
+    2300106: Ticks
+    2300108: Ticks_B
+    2300110: Wheel_BL
+    2300112: Wheel_BR
+    2300114: Wheel_FL
+    2300116: Wheel_FR
+    2300118: Accelerator
+    2300120: Brake
+    2300122: Gear
+    2300124: Rear_Bucket_Horizontal_Gear
+    2300126: Rear_Bucket_Vertical_Gear
+    2300128: Rear_Left_Lift_Lever
+    2300130: Rear_Right_Lift_Lever
+    3300000: Arrow_0
+    3300002: Arrow_1
+    3300004: Arrow_2
+    3300006: Arrow_3
+    3300008: Arrow_4
+    3300010: Baffle
+    3300012: DF_1
+    3300014: DF_2
+    3300016: DS_1
+    3300018: DS_2
+    3300020: DS_3
+    3300022: DS_4
+    3300024: DS_5
+    3300026: Forks
+    3300028: Front Arrow
+    3300030: Front Bucket
+    3300032: Front Bucket B
+    3300034: Front Left Lapa
+    3300036: Front lift
+    3300038: Front Right Paw
+    3300040: HENCOCK
+    3300042: Left Window
+    3300044: Left wing
+    3300046: Object001
+    3300048: Object002
+    3300050: Pis_1A
+    3300052: Pis_1B
+    3300054: Pis_1C
+    3300056: Pis_1C003
+    3300058: Pis_1D
+    3300060: Pis_1F
+    3300062: Pis_1G
+    3300064: Pis_1J
+    3300066: Pis_1T
+    3300068: Pis_2A
+    3300070: Pis_2B
+    3300072: Pis_2C
+    3300074: Pis_2C003
+    3300076: Pis_2D
+    3300078: Pis_2F
+    3300080: Pis_2G
+    3300082: Pis_2J
+    3300084: Pis_2T
+    3300086: Rear  Right Paw
+    3300088: Rear Bucket
+    3300090: Rear Bucket wide
+    3300092: Rear Left Paw
+    3300094: Right Door
+    3300096: Right Window
+    3300098: Right wing
+    3300100: seat
+    3300102: Steering wheel
+    3300104: The Left Door
+    3300106: Ticks
+    3300108: Ticks_B
+    3300110: Wheel_BL
+    3300112: Wheel_BR
+    3300114: Wheel_FL
+    3300116: Wheel_FR
+    3300118: Accelerator
+    3300120: Brake
+    3300122: Gear
+    3300124: Rear_Bucket_Horizontal_Gear
+    3300126: Rear_Bucket_Vertical_Gear
+    3300128: Rear_Left_Lift_Lever
+    3300130: Rear_Right_Lift_Lever
+    4300000: HENCOCK
+    4300002: Forks
+    4300004: Front Bucket
+    4300006: Front lift
+    4300008: Front Bucket B
+    4300010: Rear  Right Paw
+    4300012: Rear Left Paw
+    4300014: Front Left Lapa
+    4300016: Front Right Paw
+    4300018: Pis_1A
+    4300020: Pis_2A
+    4300022: Ticks_B
+    4300024: Ticks
+    4300026: Rear Bucket wide
+    4300028: Baffle
+    4300030: Rear Bucket
+    4300032: DF_1
+    4300034: DF_2
+    4300036: Pis_2B
+    4300038: Pis_1B
+    4300040: Arrow_4
+    4300042: Arrow_3
+    4300044: Arrow_2
+    4300046: Pis_1C
+    4300048: Pis_1D
+    4300050: Pis_2D
+    4300052: Pis_2C
+    4300054: Arrow_1
+    4300056: Pis_1F
+    4300058: Pis_2F
+    4300060: Pis_2G
+    4300062: Pis_1G
+    4300064: Arrow_0
+    4300066: Right Door
+    4300068: Right Window
+    4300070: The Left Door
+    4300072: Left Window
+    4300074: Steering wheel
+    4300076: seat
+    4300078: Wheel_FL
+    4300080: Left wing
+    4300082: Right wing
+    4300084: Wheel_BL
+    4300086: DS_1
+    4300088: DS_2
+    4300090: Front Arrow
+    4300092: DS_3
+    4300094: DS_5
+    4300096: DS_4
+    4300098: Wheel_FR
+    4300100: Wheel_BR
+    4300102: Pis_1T
+    4300104: Pis_2T
+    4300106: Pis_2C003
+    4300108: Pis_1C003
+    4300110: Pis_2J
+    4300112: Pis_1J
+    4300114: Object001
+    4300116: Object002
+    4300118: Gear
+    4300120: Rear_Bucket_Vertical_Gear
+    4300122: Rear_Bucket_Horizontal_Gear
+    4300124: Rear_Right_Lift_Lever
+    4300126: Rear_Left_Lift_Lever
+    4300128: Accelerator
+    4300130: Brake
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 9597b74286de99940986c62f900a345a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08 - Default
+    second: {fileID: 2100000, guid: b75d77f2143e60a44b667edd5e92af8a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.07
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -150,11 +150,11 @@ namespace JimmyGao
 
             if (laserRay != null && laserRay.PointAt)
             {
-                if (grabPinchAction.GetStateDown(BrushHand.handType) && !grabGripAction.GetState(SteamVR_Input_Sources.Any))
+                if (grabPinchAction.GetStateDown(BrushHand.handType))
                 {
                     VRExInputModule.CustomControllerButtonDown = true;
                 }
-                else if (grabPinchAction.GetStateUp(BrushHand.handType)/* || (grabPinchAction.GetState(BrushHand.handType) && !grabGripAction.GetState(SteamVR_Input_Sources.Any))*/)
+                else if (grabPinchAction.GetStateUp(BrushHand.handType))
                 {
                     VRExInputModule.CustomControllerButtonDown = false;
                 }
@@ -257,7 +257,7 @@ namespace JimmyGao
         public Material lastMaterial;
         public void DrawLineUpdate()
         {
-            if (grabPinchAction.GetStateDown(BrushHand.handType) && !grabGripAction.GetState(SteamVR_Input_Sources.Any))
+            if (grabPinchAction.GetStateDown(BrushHand.handType))
             {
                 /*
                 GameObject line = new GameObject ();
@@ -276,9 +276,6 @@ namespace JimmyGao
                 lastMaterial = currLine.material;
                 
                 currLine.transform.parent = BrushContent.transform;
-                currLine.gameObject.layer = BrushContent.layer;
-                currLine.gameObject.AddComponent<VRBrushLineSelectable>();
-
                 segNum = 1;
                 currLine.positionCount = segNum;
                 currLine.SetPosition(segNum - 1, BrushObj.transform.position);
@@ -299,7 +296,7 @@ namespace JimmyGao
                 GoList.Add(line);
                 MenuControl.Instance.count = 0;
             }
-            else if (grabPinchAction.GetState(BrushHand.handType) && !grabGripAction.GetState(SteamVR_Input_Sources.Any) && CurrentState == 1)
+            else if (grabPinchAction.GetState(BrushHand.handType))
             {
                 Vector3 currentPos = BrushObj.transform.position;
 
@@ -315,24 +312,21 @@ namespace JimmyGao
                     }
                 }
             }
-            if (grabPinchAction.GetStateUp(BrushHand.handType) || (CurrentState == 1 && grabPinchAction.GetState(BrushHand.handType) && grabGripAction.GetState(SteamVR_Input_Sources.Any)))
+            if (grabPinchAction.GetStateUp(BrushHand.handType))
             {
-                if (line != null)
-                {
-                    CurrentState = 0;
+                CurrentState = 0;
 
-                    currLineBound = line.GetComponent<Renderer>().bounds;
-                    currLineCollider = line.AddComponent<BoxCollider>();
-                    currLineCollider.isTrigger = true;
-                    currLineCollider.size = currLineBound.size;
-                    currLineCollider.center = currLineBound.center - line.transform.position;
+                currLineBound = line.GetComponent<Renderer>().bounds;
+                currLineCollider = line.AddComponent<BoxCollider>();
+                currLineCollider.isTrigger = true;
+                currLineCollider.size = currLineBound.size;
+                currLineCollider.center = currLineBound.center - line.transform.position;
 
-                    line.GetComponent<DrawingControl>().DrawingType = "Line";
-                    line.GetComponent<DrawingControl>().DrawingStyleID = MenuControl.Instance.brushStyleIndex.ToString();
-                    line.GetComponent<DrawingControl>().ColorID = MenuControl.Instance.colorIndexStr.ToString();
+                line.GetComponent<DrawingControl>().DrawingType = "Line";
+                line.GetComponent<DrawingControl>().DrawingStyleID = MenuControl.Instance.brushStyleIndex.ToString();
+                line.GetComponent<DrawingControl>().ColorID = MenuControl.Instance.colorIndexStr.ToString();
 
-                    print("Golist.Count：" + GoList.Count);
-                }
+                print("Golist.Count：" + GoList.Count);
             }
         }
         #endregion
@@ -343,16 +337,13 @@ namespace JimmyGao
         public void DrawStraightLineUpdate()
         {
             Vector3 brushPos = BrushObj.transform.position;
-            if (grabPinchAction.GetStateDown(BrushHand.handType) && CurrentState == 0 && !grabGripAction.GetState(SteamVR_Input_Sources.Any))
+            if (grabPinchAction.GetStateDown(BrushHand.handType) && CurrentState == 0)
             {
                 GameObject line = Instantiate(InitLineObj);
                 currLine = line.GetComponent<LineRenderer>();
                 lastMaterial = currLine.material;
                 
                 currLine.transform.SetParent(BrushContent.transform);
-                currLine.gameObject.layer = BrushContent.layer;
-                currLine.gameObject.AddComponent<VRBrushLineSelectable>();
-
                 segNum = 2;
                 currLine.positionCount = segNum;
                 currLine.SetPosition(segNum - 2, brushPos);
@@ -380,7 +371,7 @@ namespace JimmyGao
             {
                 currLine.SetPosition(currLine.positionCount - 1, brushPos);
 
-                if (grabPinchAction.GetStateDown(BrushHand.handType) && !grabGripAction.GetState(SteamVR_Input_Sources.Any))
+                if (grabPinchAction.GetStateDown(BrushHand.handType))
                 {
                     segNum += 2;
                     currLine.positionCount = segNum;
@@ -492,7 +483,7 @@ namespace JimmyGao
         /// </summary>
         private void DrawingParticleSystem()
         {
-            if (grabPinchAction.GetStateDown(BrushHand.handType) && BrushMode == 5 && EventSystem.current.IsPointerOverGameObject() == false && !grabGripAction.GetState(SteamVR_Input_Sources.Any))
+            if (grabPinchAction.GetStateDown(BrushHand.handType) && BrushMode == 5 && EventSystem.current.IsPointerOverGameObject() == false)
             {
                 //_particle = Instantiate(ParticleInitObj);
                 //print("创建粒子");
@@ -517,14 +508,6 @@ namespace JimmyGao
                 _particle.GetComponent<DrawingControl>().DrawingType = "Particle";
 
                 _particle.GetComponent<DrawingControl>().ParticleStyleID = particleStyleIndex.ToString();
-
-                _particle.layer = BrushContent.layer;
-                _particle.AddComponent<VRBrushParticleSelectable>();
-
-                BoxCollider collider = _particle.AddComponent<BoxCollider>();
-                collider.isTrigger = true;
-                collider.size = Vector3.one * 5f;
-                collider.center = Vector3.zero;
 
                 particleStyleIndexList.Add(particleStyleIndex);
 
@@ -583,7 +566,6 @@ namespace JimmyGao
         public void PlusBrushSize(int size)
         {
             BrushObj.transform.localScale *= 1.5f;
-            BrushObj.transform.localPosition = new Vector3(0f, BrushObj.transform.localScale.y+0.005f, 0.05f);
             LineRenderer lr = InitLineObj.GetComponent<LineRenderer>();
             lr.widthMultiplier *= 1.5f;
         }
@@ -602,7 +584,6 @@ namespace JimmyGao
                 BrushObj.transform.localScale = new Vector3(0.008f, 0.008f, 0.008f);
                 lr.widthMultiplier = 0.025f;
             }
-            BrushObj.transform.localPosition = new Vector3(0f, BrushObj.transform.localScale.y + 0.005f, 0.05f);
         }
         #endregion
         

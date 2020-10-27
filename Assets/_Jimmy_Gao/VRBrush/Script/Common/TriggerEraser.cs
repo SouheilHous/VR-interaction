@@ -26,7 +26,7 @@ public class TriggerEraser : MonoBehaviour
 
     private void Update()
     {
-        RepealEraserObj();
+        //RepealEraserObj();
     }
 
     #region 撤销擦除的物体

@@ -8,7 +8,7 @@ namespace HutongGames.PlayMaker
     [AddComponentMenu("PlayMaker/UI/UI Bool Value Changed Event")]
     public class PlayMakerUiBoolValueChangedEvent : PlayMakerUiEventBase
     {
-        public Toggle toggle;
+        public UnityEngine.UI.Toggle toggle;
 
         protected override void Initialize()
         {
@@ -17,11 +17,12 @@ namespace HutongGames.PlayMaker
 
             if (toggle == null)
             {
-                toggle = GetComponent<Toggle>();
+                toggle = GetComponent<UnityEngine.UI.Toggle>();
             }
 
             if (toggle != null)
             {
+                
                 toggle.onValueChanged.AddListener(OnValueChanged);
             }
         }

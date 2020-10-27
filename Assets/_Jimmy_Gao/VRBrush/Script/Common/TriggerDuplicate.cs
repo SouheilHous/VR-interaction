@@ -28,7 +28,7 @@ public class TriggerDuplicate : MonoBehaviour
     {
         if (other.tag == "Line" && BrushManager.Instance.BrushMode == 4)
         {
-            if (BrushManager.Instance.grabPinchAction.GetStateUp(BrushManager.Instance.BrushHand.handType))
+            if (BrushManager.Instance.grabPinchAction.GetStateDown(BrushManager.Instance.BrushHand.handType))
             {
                 print("点击了复制");
                 GameObject newLine = Instantiate(other.gameObject);

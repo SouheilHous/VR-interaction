@@ -32,4 +32,28 @@ MonoBehaviour:
     - 
     variableCategoryIDs: 
   events:
-  - OnClick
+  - on_grab
+  - grab
+  - release
+  - arrow3_down
+  - arrow3_up
+  - arrow4_down
+  - arrow4_up
+  - arrow1_down
+  - arrow1_up
+  - arrow2_down
+  - arrow2_up
+  - rearlift_left_up
+  - rearlift_left_down
+  - rearlift_right_down
+  - rearlift_right_up
+  - bucket_down
+  - bucket_up
+  - bucket_plate_down
+  - bucket_plate_up
+  - INNER_COLLIDER_ENTER
+  - INNER_COLLIDER_EXIT
+  - INNER_COLLIDER_STAY
+  - OUTER_COLLIDER_ENTER
+  - OUTER_COLLIDER_STAY
+  - OUTER_COLLIDER_EXIT
