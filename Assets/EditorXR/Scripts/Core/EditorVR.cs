@@ -19,6 +19,7 @@ using UnityEngine.InputNew;
 
 namespace UnityEditor.Experimental.EditorVR.Core
 {
+  
 #if UNITY_2018_4_OR_NEWER || UNITY_2019_1_OR_NEWER
     class EditorXRRequirementsMet { }
 #endif
@@ -307,7 +308,6 @@ namespace UnityEditor.Experimental.EditorVR.Core
         IEnumerator Start()
         {
             Initialize();
-
             var leftHandFound = false;
             var rightHandFound = false;
 
@@ -409,7 +409,11 @@ namespace UnityEditor.Experimental.EditorVR.Core
             DrivenRectTransformTracker.StartRecordingUndo();
 #endif
         }
+        void Awake()
+        {
+            this.transform.tag = "Player";
 
+        }
         void Update()
         {
             GetNestedModule<Viewer>().UpdateCamera();
@@ -428,7 +432,7 @@ namespace UnityEditor.Experimental.EditorVR.Core
 
             GetNestedModule<UI>().UpdateManipulatorVisibilities();
         }
-
+        
         public void DuplicateCurrentlySelectedObjects()
         {
             GetNestedModule<DirectSelection>().DuplicateCurrentlySelectedObjects();

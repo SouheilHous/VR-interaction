@@ -6,7 +6,7 @@ namespace UnityEngine.InputNew
 {
 	public class LocomotionInput : ActionMapInput {
 		public LocomotionInput (ActionMap actionMap) : base (actionMap) { }
-		
+
 		public ButtonInputControl @blink { get { return (ButtonInputControl)this[0]; } }
 		public ButtonInputControl @crawl { get { return (ButtonInputControl)this[1]; } }
 		public ButtonInputControl @scaleReset { get { return (ButtonInputControl)this[2]; } }

@@ -7,7 +7,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
-
 namespace Valve.VR.InteractionSystem
 {
 	//-------------------------------------------------------------------------
@@ -70,6 +69,8 @@ namespace Valve.VR.InteractionSystem
 		private Transform pointerStartTransform;
 		private Hand pointerHand = null;
 		private Player player = null;
+		[SerializeField] Transform editorvr ;
+
 		private TeleportArc teleportArc = null;
 
 		private bool visible = false;
@@ -174,7 +175,7 @@ namespace Valve.VR.InteractionSystem
 			HidePointer();
 
 			player = InteractionSystem.Player.instance;
-
+			editorvr = GameObject.FindGameObjectWithTag("Player").transform;
 			if ( player == null )
 			{
 				Debug.LogError("<b>[SteamVR Interaction]</b> Teleport: No Player instance found in map.", this);
@@ -900,8 +901,10 @@ namespace Valve.VR.InteractionSystem
 			else
 			{
 				teleportingToMarker.TeleportPlayer( pointedAtPosition );
+				
 			}
-
+			if (editorvr != null)
+				editorvr.position = pointedAtPosition;
 			Teleport.Player.Send( pointedAtTeleportMarker );
 		}
 
