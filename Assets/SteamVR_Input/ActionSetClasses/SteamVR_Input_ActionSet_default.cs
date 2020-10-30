@@ -217,6 +217,134 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean VR_Brush_Btn
+        {
+            get
+            {
+                return SteamVR_Actions.default_VR_Brush_Btn;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 MoveAround
+        {
+            get
+            {
+                return SteamVR_Actions.default_MoveAround;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 TouchPadTouch
+        {
+            get
+            {
+                return SteamVR_Actions.default_TouchPadTouch;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 Move_Y_Axis
+        {
+            get
+            {
+                return SteamVR_Actions.default_Move_Y_Axis;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean ToggleFlying
+        {
+            get
+            {
+                return SteamVR_Actions.default_ToggleFlying;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean IncreaseFlyingSpd
+        {
+            get
+            {
+                return SteamVR_Actions.default_IncreaseFlyingSpd;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean DecreaseFlyingSPd
+        {
+            get
+            {
+                return SteamVR_Actions.default_DecreaseFlyingSPd;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean M_Forward
+        {
+            get
+            {
+                return SteamVR_Actions.default_M_Forward;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean NewAction
+        {
+            get
+            {
+                return SteamVR_Actions.default_NewAction;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean M_Left
+        {
+            get
+            {
+                return SteamVR_Actions.default_M_Left;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean M_Right
+        {
+            get
+            {
+                return SteamVR_Actions.default_M_Right;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean M_Backward
+        {
+            get
+            {
+                return SteamVR_Actions.default_M_Backward;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean BigJump
+        {
+            get
+            {
+                return SteamVR_Actions.default_BigJump;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean InverseBigJump
+        {
+            get
+            {
+                return SteamVR_Actions.default_InverseBigJump;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Toggle_ActionSet
+        {
+            get
+            {
+                return SteamVR_Actions.default_Toggle_ActionSet;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 TwoAxis
+        {
+            get
+            {
+                return SteamVR_Actions.default_TwoAxis;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
