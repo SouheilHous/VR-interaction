@@ -23,7 +23,8 @@ public class Flying : MonoBehaviour
     private Transform m_Cam_Rig;
     private Transform m_HeadTransform;
     public Transform head;
-    
+    public bool EditorXR;
+
 
     public SteamVR_Behaviour_Pose left;
     public SteamVR_Behaviour_Pose right;
@@ -60,11 +61,21 @@ public class Flying : MonoBehaviour
 
     private void Awake()
     {
-        c_Controller = Character.GetComponent<CharacterController>();
     }
 
     private void Start()
     {
+        if (EditorXR == true)
+        {
+            Character = GameObject.FindGameObjectWithTag("Player").transform;
+            if (Character.GetComponent<CharacterController>() == null)
+            {
+                Character.gameObject.AddComponent<CharacterController>();
+            }
+        }
+       
+        c_Controller = Character.GetComponent<CharacterController>();
+
         m_Cam_Rig = transform;
         m_HeadTransform = head;
         gripsPressed = 0;

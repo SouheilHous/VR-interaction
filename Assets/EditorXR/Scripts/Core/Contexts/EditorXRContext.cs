@@ -48,7 +48,7 @@ namespace UnityEditor.Experimental.EditorVR.Core
         MonoScript m_DefaultAlternateMenu;
 
         [SerializeField]
-        internal List<MonoScript> m_DefaultToolStack;
+        public List<MonoScript> m_DefaultToolStack;
 
         [SerializeField]
         List<MonoScript> m_HiddenTypes;

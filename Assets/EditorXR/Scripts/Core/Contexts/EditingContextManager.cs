@@ -15,12 +15,12 @@ namespace UnityEditor.Experimental.EditorVR.Core
 #if UNITY_EDITOR
     [InitializeOnLoad]
 #endif
-    sealed class EditingContextManager : MonoBehaviour
+    public class EditingContextManager : MonoBehaviour
     {
 #if ENABLE_EDITORXR
 #pragma warning disable 649
         [SerializeField]
-        UnityObject m_DefaultContext;
+        public UnityObject m_DefaultContext;
 #pragma warning restore 649
 
         internal const string settingsPath = "ProjectSettings/EditingContextManagerSettings.asset";
