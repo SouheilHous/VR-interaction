@@ -345,6 +345,22 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Pose UIPointer
+        {
+            get
+            {
+                return SteamVR_Actions.default_UIPointer;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean InteractMain
+        {
+            get
+            {
+                return SteamVR_Actions.default_InteractMain;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get

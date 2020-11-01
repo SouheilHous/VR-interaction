@@ -170,6 +170,16 @@
       "type": "vector2"
     },
     {
+      "name": "/actions/default/in/UIPointer",
+      "type": "pose",
+      "requirement": "mandatory"
+    },
+    {
+      "name": "/actions/default/in/InteractMain",
+      "type": "boolean",
+      "requirement": "mandatory"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -300,7 +310,9 @@
       "/actions/default/in/ThumbstickButton": "EditorXR Thumbstick Button",
       "/actions/default/in/UltimateRadialMenuSelect": "UltimateRadialMenu Select",
       "/actions/default/in/UltimateRadialMenuHover": "UltimateRadialMenu Hover",
-      "/actions/default/in/Toggle_ActionSet": "Toggle_ActionSet"
+      "/actions/default/in/Toggle_ActionSet": "Toggle_ActionSet",
+      "/actions/default/in/UIPointer": "UI Pointer",
+      "/actions/default/in/InteractMain": "Interact Main"
     }
   ]
 }

@@ -24,13 +24,13 @@ partial class OpenVRInput {
 	/// Direction we use to point at browsers. pose type
 	/// Mandatory.
 	/// </summary>
-	private const string PointPose = "/actions/ui/in/UIPointer";
+	private const string PointPose = "/actions/default/in/UIPointer";
 
 	/// <summary>
 	/// Input path for "left" click. bool type
 	/// Empty to disable.
 	/// </summary>
-	private const string LeftClickAction = "/actions/ui/in/InteractMain";
+	private const string LeftClickAction = "/actions/default/in/InteractMain";
 
 	/// <summary>
 	/// Input path for "middle" click. bool type

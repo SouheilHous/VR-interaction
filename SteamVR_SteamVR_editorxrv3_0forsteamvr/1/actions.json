@@ -106,6 +106,70 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/VR_Brush_Btn",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MoveAround",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/default/in/TouchPadTouch",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/default/in/Move_Y_Axis",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/default/in/ToggleFlying",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/IncreaseFlyingSpd",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/DecreaseFlyingSPd",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/M_Forward",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/NewAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/M_Left",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/M_Right",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/M_Backward",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/BigJump",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/InverseBigJump",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Toggle_ActionSet",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/TwoAxis",
+      "type": "vector2"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -235,7 +299,8 @@
       "/actions/default/in/Action2": "EditorXR Action2",
       "/actions/default/in/ThumbstickButton": "EditorXR Thumbstick Button",
       "/actions/default/in/UltimateRadialMenuSelect": "UltimateRadialMenu Select",
-      "/actions/default/in/UltimateRadialMenuHover": "UltimateRadialMenu Hover"
+      "/actions/default/in/UltimateRadialMenuHover": "UltimateRadialMenu Hover",
+      "/actions/default/in/Toggle_ActionSet": "Toggle_ActionSet"
     }
   ]
 }

@@ -19,6 +19,8 @@ TagManager:
   - EDITORXR ProjectVisualizerPrefab
   - ScalingToolManager
   - EDITORXR ExclusiveMode
+  - ClappingHands
+  - sculpt
   layers:
   - Default
   - TransparentFX
@@ -30,9 +32,9 @@ TagManager:
   - 
   - PostProcessing
   - UltimateRadialMenu
-  - 
-  - 
-  - 
+  - ignore
+  - Player
+  - Hands
   - 
   - 
   - 
