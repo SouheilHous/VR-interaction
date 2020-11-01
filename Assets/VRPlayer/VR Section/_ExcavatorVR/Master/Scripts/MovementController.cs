@@ -47,12 +47,14 @@ public class MovementController : MonoBehaviour
     private LinearMapping _steeringValue = null;
     [SerializeField]
     private Transform _player = null;
+    [SerializeField]
+    private Transform _playerGrabpose = null;
 
     private bool _isGrabbed = false;
 
     void Start()
     {
-
+        _player = GameObject.FindGameObjectWithTag("Player").transform;
         audioSourceCar.pitch = startPitch;
         audioSourceCar.Play();
         rg.centerOfMass = COM.localPosition;
@@ -86,8 +88,8 @@ public class MovementController : MonoBehaviour
     private void OnGrabbed()
     {
         _isGrabbed = true;
-        if(_player != null)
-        _player.parent = this.transform;
+        if (_player != null)
+            _playerGrabpose.position = _player.position;
     }
 
     private void OnReleased()
@@ -96,6 +98,7 @@ public class MovementController : MonoBehaviour
         // if(_player != null)
         // _player.parent = null;
         Stop();
+        _player.eulerAngles = Vector3.zero;
     }
 
     private WheelData SetupWheels(Transform wheel, WheelCollider col)
@@ -112,6 +115,7 @@ public class MovementController : MonoBehaviour
     void Update()
     {
         SoundCar();
+      
     }
 
     float _acceleration = 0f;
@@ -126,7 +130,11 @@ public class MovementController : MonoBehaviour
                 _acceleration = _throttle.GetAxis(_steeringWheel.rightHand.handType);
 
             _steering = Map(_steeringWheel.angle, -_steeringWheel.clamp, _steeringWheel.clamp, 1, -1);
+            _player.position = _playerGrabpose.position;
+            _player.rotation = _playerGrabpose.rotation;
+
         }
+       
         CarMove();
         UpdateWheels();
     }
