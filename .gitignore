@@ -2,3 +2,15 @@
 Library/PlayerDataCache/Win64/Data/resources.assets.resS
 *.lock
 *.ide
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/w64/zf_cef.dll
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/w64/zf_cef.dll.meta
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/w32/zf_cef.dll
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/w32/zf_cef.dll.meta
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/m64/BrowserLib.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/m64/BrowserLib.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework.meta
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/l64/zf_cef.so
+Assets/VRPlayer/VR Section/ZFBrowser/Plugins/l64/zf_cef.so.meta
+Assets/VRPlayer/-z. Places/Bookstore/BookStoreV2.prefab
+Assets/VRPlayer/-z. Places/Bookstore/BookStoreV2.prefab.meta
+Assets/VRPlayer/VR Section/_ExcavatorVR/Master/Terrains/Terrain_Layers/Textures/Grass_Wild/Grass_Wild_Mask.psd
+Assets/VRPlayer/VR Section/_ExcavatorVR/Master/Terrains/Terrain_Layers/Textures/Grass_Wild/Grass_Wild_Mask.psd.meta
