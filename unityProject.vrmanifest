@@ -2,7 +2,7 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.main_project_vr1.exe",
+      "app_key": "application.generated.unity.steamvrplaymaker.exe",
       "launch_type": "url",
       "url": "steam://launch/",
       "action_manifest_path": "C:\\Users\\souhe\\OneDrive\\Documents\\Martin v28- PrtclsBigBoxes(Last)(pending assets integration)\\Assets\\StreamingAssets\\SteamVR\\actions.json",

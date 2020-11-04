@@ -26,7 +26,7 @@ public class ExcavatorCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SteamVR_Actions._default.ToggleFlying.state == true)
+        if (SteamVR_Actions.platformer.ToggleFlying.state == true)
         {
             isFlying = !isFlying;
         }

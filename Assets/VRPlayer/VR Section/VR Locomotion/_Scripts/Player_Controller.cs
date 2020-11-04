@@ -47,7 +47,7 @@ public class Player_Controller : MonoBehaviour
             
         //}
         // print("browser ON ? = " + isBrowserOn);
-        if (SteamVR_Actions._default.VR_Brush_Btn.GetStateDown(SteamVR_Input_Sources.Any) && !isBrowserOn)
+        if (SteamVR_Actions.platformer.VR_Brush_Btn.GetStateDown(SteamVR_Input_Sources.Any) && !isBrowserOn)
         {
             print("Checking count");
             if (pressCount >= 2)

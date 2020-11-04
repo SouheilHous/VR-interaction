@@ -89,107 +89,83 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean VR_Brush_Btn
+        public virtual SteamVR_Action_Boolean SnapTurnLeft
         {
             get
             {
-                return SteamVR_Actions.default_VR_Brush_Btn;
+                return SteamVR_Actions.default_SnapTurnLeft;
             }
         }
         
-        public virtual SteamVR_Action_Vector2 MoveAround
+        public virtual SteamVR_Action_Boolean SnapTurnRight
         {
             get
             {
-                return SteamVR_Actions.default_MoveAround;
+                return SteamVR_Actions.default_SnapTurnRight;
             }
         }
         
-        public virtual SteamVR_Action_Vector2 TouchPadTouch
+        public virtual SteamVR_Action_Single Trigger
         {
             get
             {
-                return SteamVR_Actions.default_TouchPadTouch;
+                return SteamVR_Actions.default_Trigger;
             }
         }
         
-        public virtual SteamVR_Action_Vector2 Move_Y_Axis
+        public virtual SteamVR_Action_Single Grip
         {
             get
             {
-                return SteamVR_Actions.default_Move_Y_Axis;
+                return SteamVR_Actions.default_Grip;
             }
         }
         
-        public virtual SteamVR_Action_Boolean ToggleFlying
+        public virtual SteamVR_Action_Vector2 ThumbstickPosition
         {
             get
             {
-                return SteamVR_Actions.default_ToggleFlying;
+                return SteamVR_Actions.default_ThumbstickPosition;
             }
         }
         
-        public virtual SteamVR_Action_Boolean IncreaseFlyingSpd
+        public virtual SteamVR_Action_Boolean Action1
         {
             get
             {
-                return SteamVR_Actions.default_IncreaseFlyingSpd;
+                return SteamVR_Actions.default_Action1;
             }
         }
         
-        public virtual SteamVR_Action_Boolean DecreaseFlyingSPd
+        public virtual SteamVR_Action_Boolean Action2
         {
             get
             {
-                return SteamVR_Actions.default_DecreaseFlyingSPd;
+                return SteamVR_Actions.default_Action2;
             }
         }
         
-        public virtual SteamVR_Action_Boolean M_Forward
+        public virtual SteamVR_Action_Boolean ThumbstickButton
         {
             get
             {
-                return SteamVR_Actions.default_M_Forward;
+                return SteamVR_Actions.default_ThumbstickButton;
             }
         }
         
-        public virtual SteamVR_Action_Boolean M_Left
+        public virtual SteamVR_Action_Boolean MenuButton
         {
             get
             {
-                return SteamVR_Actions.default_M_Left;
+                return SteamVR_Actions.default_MenuButton;
             }
         }
         
-        public virtual SteamVR_Action_Boolean M_Right
+        public virtual SteamVR_Action_Boolean ScaleUp
         {
             get
             {
-                return SteamVR_Actions.default_M_Right;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean M_Backward
-        {
-            get
-            {
-                return SteamVR_Actions.default_M_Backward;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean BigJump
-        {
-            get
-            {
-                return SteamVR_Actions.default_BigJump;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean InverseBigJump
-        {
-            get
-            {
-                return SteamVR_Actions.default_InverseBigJump;
+                return SteamVR_Actions.default_ScaleUp;
             }
         }
         
@@ -225,51 +201,35 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean ScaleUp
+        public virtual SteamVR_Action_Vector2 UltimateRadialMenuHover
         {
             get
             {
-                return SteamVR_Actions.default_ScaleUp;
+                return SteamVR_Actions.default_UltimateRadialMenuHover;
             }
         }
         
-        public virtual SteamVR_Action_Boolean MenuButton
+        public virtual SteamVR_Action_Boolean UltimateRadialMenuSelect
         {
             get
             {
-                return SteamVR_Actions.default_MenuButton;
+                return SteamVR_Actions.default_UltimateRadialMenuSelect;
             }
         }
         
-        public virtual SteamVR_Action_Boolean Toggle_ActionSet
+        public virtual SteamVR_Action_Boolean InteractMain
         {
             get
             {
-                return SteamVR_Actions.default_Toggle_ActionSet;
+                return SteamVR_Actions.default_InteractMain;
             }
         }
         
-        public virtual SteamVR_Action_Vector2 TwoAxis
+        public virtual SteamVR_Action_Pose UIPointer
         {
             get
             {
-                return SteamVR_Actions.default_TwoAxis;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean SnapTurnLeft
-        {
-            get
-            {
-                return SteamVR_Actions.default_SnapTurnLeft;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean SnapTurnRight
-        {
-            get
-            {
-                return SteamVR_Actions.default_SnapTurnRight;
+                return SteamVR_Actions.default_UIPointer;
             }
         }
         

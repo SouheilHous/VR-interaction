@@ -106,77 +106,13 @@
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/VR_Brush_Btn",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/MoveAround",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/default/in/TouchPadTouch",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/default/in/Move_Y_Axis",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/default/in/ToggleFlying",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/IncreaseFlyingSpd",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/DecreaseFlyingSPd",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/M_Forward",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/NewAction",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/M_Left",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/M_Right",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/M_Backward",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/BigJump",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/InverseBigJump",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/Toggle_ActionSet",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/TwoAxis",
-      "type": "vector2"
+      "name": "/actions/default/in/InteractMain",
+      "type": "boolean",
+      "requirement": "suggested"
     },
     {
       "name": "/actions/default/in/UIPointer",
       "type": "pose",
-      "requirement": "mandatory"
-    },
-    {
-      "name": "/actions/default/in/InteractMain",
-      "type": "boolean",
       "requirement": "mandatory"
     },
     {
@@ -190,6 +126,62 @@
     {
       "name": "/actions/platformer/in/Jump",
       "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/VR_Brush_Btn",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/MoveAround",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/platformer/in/Move_Y_Axis",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/platformer/in/ToggleFlying",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/IncreaseFlyingSpd",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/DecreaseFlyingSPd",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/M_Forward",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/M_Left",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/M_Right",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/M_Backward",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/BigJump",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/InverseBigJump",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/Toggle_ActionSet",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/platformer/in/TwoAxis",
+      "type": "vector2"
     },
     {
       "name": "/actions/buggy/in/Steering",
@@ -309,10 +301,7 @@
       "/actions/default/in/Action2": "EditorXR Action2",
       "/actions/default/in/ThumbstickButton": "EditorXR Thumbstick Button",
       "/actions/default/in/UltimateRadialMenuSelect": "UltimateRadialMenu Select",
-      "/actions/default/in/UltimateRadialMenuHover": "UltimateRadialMenu Hover",
-      "/actions/default/in/Toggle_ActionSet": "Toggle_ActionSet",
-      "/actions/default/in/UIPointer": "UI Pointer",
-      "/actions/default/in/InteractMain": "Interact Main"
+      "/actions/default/in/UltimateRadialMenuHover": "UltimateRadialMenu Hover"
     }
   ]
 }

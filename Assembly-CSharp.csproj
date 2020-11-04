@@ -1065,6 +1065,10 @@
     <Compile Include="Assets\Ultimate Radial Menu\Scripts\UltimateRadialMenuInputManager.cs" />
     <Compile Include="Assets\Ultimate Radial Menu\Scripts\UltimateRadialMenuPointer.cs" />
     <Compile Include="Assets\Ultimate Radial Menu\Scripts\UltimateRadialMenuScreenSizeUpdater.cs" />
+    <Compile Include="Assets\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_buggy.cs" />
+    <Compile Include="Assets\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_default.cs" />
+    <Compile Include="Assets\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_mixedreality.cs" />
+    <Compile Include="Assets\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_platformer.cs" />
     <Compile Include="Assets\VRPlayer\Assets(General)\EndlessBook\Book\Scripts\BookAnimationCompleted.cs" />
     <Compile Include="Assets\VRPlayer\Assets(General)\EndlessBook\Book\Scripts\EndlessBook.cs" />
     <Compile Include="Assets\VRPlayer\Assets(General)\EndlessBook\Book\Scripts\Page.cs" />
@@ -1446,14 +1450,6 @@
     <Compile Include="Assets\VRPlayer\VR Section\MultiMonitors\uDesktopDuplicationV2\Examples\Scripts\RaycastExample.cs" />
     <Compile Include="Assets\VRPlayer\VR Section\MultiMonitors\uDesktopDuplicationV2\Examples\Scripts\ToggleMonitors.cs" />
     <Compile Include="Assets\VRPlayer\VR Section\MultiMonitors\uDesktopDuplicationV2\Examples\Scripts\UddSceneManager.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_buggy.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_default.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_mixedreality.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_platformer.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\ActionSetClasses\SteamVR_Input_ActionSet_ui.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\SteamVR_Input_Actions.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\SteamVR_Input_ActionSets.cs" />
-    <Compile Include="Assets\VRPlayer\VR Section\SteamVR(section)\SteamVR_Input\SteamVR_Input_Initialization.cs" />
     <Compile Include="Assets\VRPlayer\VR Section\VR Character\3D Models\King Character\King_G_P\AnimationScript.cs" />
     <Compile Include="Assets\VRPlayer\VR Section\VR Character\Assets\FinalIK\FinalIK\_DEMOS\Aim IK\Scripts\AimBoxing.cs" />
     <Compile Include="Assets\VRPlayer\VR Section\VR Character\Assets\FinalIK\FinalIK\_DEMOS\Aim IK\Scripts\SimpleAimingSystem.cs" />

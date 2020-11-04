@@ -177,25 +177,25 @@ public class Flying : MonoBehaviour
                 CalculateMovement();
                 //print("Not Flying");
 
-                if (SteamVR_Actions._default.M_Forward.state)
+                if (SteamVR_Actions.platformer.M_Forward.state)
                 {
                     //c_Controller.transform.position += (transform.forward * GroundMovSpd * Time.deltaTime);
                     movement += orientation * (GroundMovSpd * Vector3.forward) * Time.deltaTime;
                     c_Controller.Move(movement);
                 }
-                else if (SteamVR_Actions._default.M_Backward.state)
+                else if (SteamVR_Actions.platformer.M_Backward.state)
                 {
                     movement += orientation * (-GroundMovSpd * Vector3.forward) * Time.deltaTime;
                     c_Controller.Move(movement);
                 }
-                else if (SteamVR_Actions._default.M_Left.state)
+                else if (SteamVR_Actions.platformer.M_Left.state)
                 {
                     // print("left movement");
                     movement += orientation * (GroundMovSpd * Vector3.left) * Time.deltaTime;
                     c_Controller.Move(movement);
                     //c_Controller.transform.position += ((-transform.right) * GroundMovSpd * Time.deltaTime);
                 }
-                else if (SteamVR_Actions._default.M_Right.state)
+                else if (SteamVR_Actions.platformer.M_Right.state)
                 {
                     movement += orientation * (-GroundMovSpd * Vector3.left) * Time.deltaTime;
                     c_Controller.Move(movement);
@@ -205,7 +205,7 @@ public class Flying : MonoBehaviour
             }
 
 
-            if (SteamVR_Actions._default.ToggleFlying.state == true)
+            if (SteamVR_Actions.platformer.ToggleFlying.state == true)
             {
                 //print("Toggle Flight 1");
                 isFlying = !isFlying;
@@ -231,12 +231,12 @@ public class Flying : MonoBehaviour
 
                 //tweaking speed
 
-                if (SteamVR_Actions._default.IncreaseFlyingSpd.stateDown && FlySpeed < MaxFlySpeed)
+                if (SteamVR_Actions.platformer.IncreaseFlyingSpd.stateDown && FlySpeed < MaxFlySpeed)
                 {
                     FlySpeed += XflySpd;
                     print("inc fly Spd");
                 }
-                else if (SteamVR_Actions._default.DecreaseFlyingSPd.stateDown && FlySpeed > MinFlySpeed)
+                else if (SteamVR_Actions.platformer.DecreaseFlyingSPd.stateDown && FlySpeed > MinFlySpeed)
                 {
                     FlySpeed -= XflySpd;
                     print("dec fly Spd");
@@ -248,39 +248,39 @@ public class Flying : MonoBehaviour
             //Rotating Around Upward Axis
             if (!BigJump && !InverseBigJump)
             {
-                if (Input.GetKeyDown(KeyCode.RightArrow) || SteamVR_Actions._default.MoveAround.axis.x > 0.0f)
+                if (Input.GetKeyDown(KeyCode.RightArrow) || SteamVR_Actions.platformer.MoveAround.axis.x > 0.0f)
                 {
                     print("right rot");
                     GetComponent<CharacterController>().transform.Rotate(Vector3.up * RotationSpeed * Time.deltaTime);
                 }
-                else if (Input.GetKeyDown(KeyCode.LeftArrow) || SteamVR_Actions._default.MoveAround.axis.x < 0.0f)
+                else if (Input.GetKeyDown(KeyCode.LeftArrow) || SteamVR_Actions.platformer.MoveAround.axis.x < 0.0f)
                 {
                     GetComponent<CharacterController>().transform.Rotate(Vector3.up * -RotationSpeed * Time.deltaTime);
                     print("left rot");
                 }
 
                 //upward movement
-                if (SteamVR_Actions._default.Move_Y_Axis.axis.y > 0.0f)
+                if (SteamVR_Actions.platformer.Move_Y_Axis.axis.y > 0.0f)
                 {
                     print("trying to go up");
                     //float acc = SteamVR_Actions._default.Move_Y_Axis.
                     transform.position = new Vector3(transform.position.x, transform.position.y + (UpMoveSpd * Time.deltaTime), transform.position.z);
                 }
-                else if (SteamVR_Actions._default.Move_Y_Axis.axis.y < 0.0f)
+                else if (SteamVR_Actions.platformer.Move_Y_Axis.axis.y < 0.0f)
                 {
                     print("trying to go down");
                     transform.position = new Vector3(transform.position.x, transform.position.y - (UpMoveSpd * Time.deltaTime), transform.position.z);
                 }
             }
 
-            if (SteamVR_Actions._default.BigJump.state)
+            if (SteamVR_Actions.platformer.BigJump.state)
             {
                 JumpPos = transform.position.y + (UpMoveSpd * BigJumpForce * Time.deltaTime);
                 print("up jump pos = " + JumpPos);
                 InverseBigJump = false;
                 BigJump = true;
             }
-            else if (SteamVR_Actions._default.InverseBigJump.state)
+            else if (SteamVR_Actions.platformer.InverseBigJump.state)
             {
                 JumpPos = transform.position.y + (UpMoveSpd * -BigJumpForce * Time.deltaTime);
                 print("down jump pos = " + JumpPos);
