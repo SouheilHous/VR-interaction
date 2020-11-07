@@ -116,6 +116,10 @@
       "requirement": "mandatory"
     },
     {
+      "name": "/actions/default/in/Toggle_ActionSet",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

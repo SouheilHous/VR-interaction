@@ -99,6 +99,14 @@
             {
                "output" : "/actions/default/in/pose",
                "path" : "/user/hand/right/pose/raw"
+            },
+            {
+               "output" : "/actions/default/in/uipointer",
+               "path" : "/user/hand/left/pose/tip"
+            },
+            {
+               "output" : "/actions/default/in/uipointer",
+               "path" : "/user/hand/right/pose/tip"
             }
          ],
          "skeleton" : [
@@ -415,6 +423,51 @@
                },
                "mode" : "grab",
                "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/menubutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/interactmain"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/switchmenu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/system"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/toggle_actionset"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/system"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/toggle_actionset"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/system"
             }
          ]
       },
@@ -422,8 +475,11 @@
          "sources" : [
             {
                "inputs" : {
+                  "click" : {
+                     "output" : "/actions/platformer/in/increaseflyingspd"
+                  },
                   "position" : {
-                     "output" : "/actions/platformer/in/move"
+                     "output" : "/actions/platformer/in/movearound"
                   }
                },
                "mode" : "joystick",
@@ -431,8 +487,11 @@
             },
             {
                "inputs" : {
+                  "click" : {
+                     "output" : "/actions/platformer/in/decreaseflyingspd"
+                  },
                   "position" : {
-                     "output" : "/actions/platformer/in/move"
+                     "output" : "/actions/platformer/in/movearound"
                   }
                },
                "mode" : "joystick",
@@ -455,6 +514,95 @@
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/platformer/in/vr_brush_btn"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/platformer/in/vr_brush_btn"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/system"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/platformer/in/m_right"
+                  },
+                  "north" : {
+                     "output" : "/actions/platformer/in/m_forward"
+                  },
+                  "south" : {
+                     "output" : "/actions/platformer/in/m_backward"
+                  },
+                  "west" : {
+                     "output" : "/actions/platformer/in/m_left"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/platformer/in/toggleflying"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/platformer/in/bigjump"
+                  },
+                  "south" : {
+                     "output" : "/actions/platformer/in/inversebigjump"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/platformer/in/move_y_axis"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/platformer/in/toggle_actionset"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/system"
             }
          ]
       }
@@ -462,7 +610,7 @@
    "category" : "steamvr_input",
    "controller_type" : "knuckles",
    "description" : "",
-   "name" : "Shared binding from mz",
+   "name" : "Saved EditorXR v3.0 for SteamVR [Testing] configuration for Index Controller",
    "options" : {},
    "simulated_actions" : []
 }
